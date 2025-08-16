@@ -549,7 +549,7 @@ footer {
 }
 
 .light-mode .gundam-header {
-  background: rgba(52, 152, 219, 0.3);
+  background: rgba(25, 155, 127, 0.3);
 }
 
 .gundam-header h3 {
@@ -834,4 +834,5 @@ footer {
     margin-right: 0;
     margin-bottom: 20px;
   }
+
 }
