@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portafolio - Desarrollador Full Stack</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;600;700&family=Orbitron:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="splash-screen">
+        <div class="splash-content">
+            <h1>EL PORTAFOLIO</h1>
+            <p>Conoce con un clic</p>
+        </div>
+    </div>
+
+    <div class="main-content">
+        <nav class="navbar navbar-expand-lg navbar-dark sticky-sm-top">
+            <div class="container">
+                <a class="navbar-brand" href="#inicio">
+                    <i class="fa-solid fa-code fa-bounce" style="--fa-animation-duration: 2s;"></i>Portafolio
+                </a>
+              
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item"><a class="nav-link active" href="#inicio">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#perfil">Perfil</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#habilidades">Habilidades</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#proyectos">Proyectos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#cv">Curriculum</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-turquesa py-1 px-3 ms-2" href="#" id="btnGundam">
+                                <i class="fas fa-robot me-1"></i>Gundam
+                            </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link btn btn-turquesa py-1 px-3 ms-2" href="#" id="btnMaterias">
+                                <i class="fas fa-book me-1"></i>Materias
+                            </a>
+                        </li>
+                    </ul>
+
+                </div>
+            </div>
+        </nav>
+
+        <section id="inicio" class="hero">
+            <div class="container">
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <div class="hero-content">
+                            <div class="hero-img">
+                                <img src="file:///C:/Users/User/Downloads/Imagen%20de%20WhatsApp%202025-08-12%20a%20las%2023.05.14_0108cbfc.jpg" alt="Foto de perfil">
+                            </div>
+                            <h1>Hola, soy <span class="text-turquesa">Cesar Dao</span></h1>
+                            <p>Estudiante de informática y diseñador gráfico de profesión, busco aprender a ser programador y escapar del yugo y presion de los clientes en el area de impresiones y diseño.
+                        teniendo como meta hacer paginas igual de rápido que una tarjeta de presentación con plantilla
+                            <a href="#proyectos" class="btn btn-turquesa">
+                                <i class="fas fa-laptop-code me-2"></i>Ver mis proyectos
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="particles" id="particles"></div>
+        </section>
+
+        <section id="perfil" class="section bg-alt">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Perfil <span class="text-turquesa">Profesional</span></h2>
+                </div>
+                <div class="row">
+                    <div class="col-lg-6 mb-4">
+                        <div class="card">
+                            <div class="card-header">
+                                <h3><i class="fas fa-user me-2"></i>Sobre mí</h3>
+                            </div>
+                            <div class="card-body">
+                                <p>Mi pasión por la informática y el diseño gráfico me ha guiado a buscar un nuevo camino:
+                                    el de la programación. Como un gran fanático de la franquicia Gundam, admiro la complejidad
+                                    de sus diseños, la estrategia de sus batallas y la fluidez de sus movimientos, elementos que
+                                    me inspiran a crear código limpio, robusto y eficiente. Busco aprender a ser programador para
+                                    escapar del yugo y la presión del mundo de las impresiones y el diseño. Mi meta es clara: quiero
+                                    poder construir páginas web con la misma rapidez y precisión que se crea una tarjeta de presentación
+                                    a partir de una plantilla, pero con la dedicación y el detalle de un Mobile Suit.</p>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6 mb-4">
+                        <div class="card">
+                            <div class="card-header">
+                                <h3><i class="fas fa-graduation-cap me-2"></i>Educación</h3>
+                            </div>
+                            <div class="card-body">
+                                <div class="mb-4">
+                                    <h4>Técnico Medio</h4>
+                                    <p class="text-turquesa">Colegio Cristo Rey - 2006 - 2022</p>
+                                    <p>Preescolar</p>
+                                    <p>Primaria</p>
+                                    <p>Bachillerato</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="habilidades" class="section">
+            <div class="container">
+                <div class="section-title">
+                    <h2><span class="text-turquesa">Habilidades</span></h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 mb-4">
+                        <div class="card">
+                            <div class="card-header">
+                                <h3><i class="fas fa-code me-2"></i>Frontend</h3>
+                            </div>
+                            <div class="card-body">
+                                <div class="skill-bar">
+                                    <div class="skill-name">
+                                        <span>HTML5 / CSS / Bootstrap</span>
+                                        <span>30%</span>
+                                    </div>
+                                    <div class="skill-progress">
+                                        <div class="skill-progress-bar" style="width: 30%"></div>
+                                    </div>
+                                </div>
+                            <div class="skill-bar">
+                                    <div class="skill-name">
+                                        <span>IA</span>
+                                        <span>30%</span>
+                                    </div>
+                                    <div class="skill-progress">
+                                        <div class="skill-progress-bar" style="width: 30%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 mb-4">
+                        <div class="card">
+                            <div class="card-header">
+                                <h3><i class="fas fa-server me-2"></i>Backend</h3>
+                            </div>
+                            <div class="card-body">
+                                <div class="skill-bar">
+                                    <div class="skill-name">
+                                        <span>MySQL</span>
+                                        <span>10%</span>
+                                    </div>
+                                    <div class="skill-progress">
+                                        <div class="skill-progress-bar" style="width: 10%"></div>
+                                    </div>
+                                </div>
+                                <div class="skill-bar">
+                                    <div class="skill-name">
+                                        <span>JavaScript/PHP</span>
+                                        <span>10%</span>
+                                    </div>
+                                    <div class="skill-progress">
+                                        <div class="skill-progress-bar" style="width: 10%"></div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="proyectos" class="section bg-alt">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Mis <span class="text-turquesa">Proyectos</span></h2>
+                </div>
+                <div class="row">
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <div class="card">
+                            <div class="project-img">
+                                <img src="https://blogger.googleusercontent.com/img/b/R29vZ2xl/AVvXsEhGrDsTgbBTZ16Vps1HDaDI74PgrId3GRtNiGAKZfS5gJljZdcXoh6gVsyDX4N2CyVCb9Vu4_2Y_zGPTvb3SxiyoIHPo-89ENqK53DYO3rh1mFk2ZfVxQ5OKUcHYCNhHAe2MTQRv_suaSOU/s1600/gundam_full.jpg" class="img-fluid" alt="Proyecto 1">
+                            </div>
+                            <div class="card-body">
+                                <h3>Página web de Gundam</h3>
+                                <p>Página donde se muestra un poco de la historia de Gundam tanto dentro como
+                                fuera de la Pantalla.</p>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <a href="https://cexord.github.io/P-gina-Gundam/" target="_blank" rel="noopener noreferrer" class="btn btn-turquesa btn-sm">Ver Detalles</a>
+                                    <div>
+                                        <span class="badge bg-turquesa">Universos Alternos</span>
+                                        <span class="badge bg-turquesa">Legado</span>
+                                        <span class="badge bg-turquesa">Universal Century U.C.</span>
+                                        <span class="badge bg-turquesa">Historia</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <div class="card">
+                            <div class="project-img">
+                                <img src="https://i.ytimg.com/vi/tDZy8wp78pg/maxresdefault.jpg" alt="Proyecto 2">
+                            </div>
+                            <div class="card-body">
+                                <h3>Formulario</h3>
+                                <p>Formulario con enlace a Camilo Sesto.</p>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <a href="https://cexord.github.io/Formulario/" target="_blank" rel="noopener noreferrer" class="btn btn-turquesa btn-sm">Ver Detalles</a>
+                                    <div>
+                                        <span class="badge bg-turquesa">Datos del Creador</span>
+                                        <span class="badge bg-turquesa">Formulario de Registro</span>
+                                        <span class="badge bg-turquesa">Link a Getsemaní</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <div class="card">
+                            <div class="project-img">
+                                <img src="https://starkcloud.com/wp-content/uploads/2025/01/Que-es-Ciberseguridad.webp" alt="Proyecto 3">
+                            </div>
+                            <div class="card-body">
+                                <h3>Página sobre Ciberseguridad</h3>
+                                <p>Plataforma para visualizar y tener un breve vistazo a la Ciberseguridad.</p>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <a href="https://cexord.github.io/Ciberseguridad/" target="_blank" rel="noopener noreferrer" class="btn btn-turquesa btn-sm">Ver Detalles</a>
+                                    <div>
+                                        <span class="badge bg-turquesa">Ciberseguridad</span>
+                                        <span class="badge bg-turquesa">Cloud Computing</span>
+                                        <span class="badge bg-turquesa">Redes</span>
+                                        <span class="badge bg-turquesa">Desarrollo de Software</span>
+                                        <span class="badge bg-turquesa">Análisis de Datos y Big Data</span>
+                                        <span class="badge bg-turquesa">Inteligencia Artificial y Machine Learning</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <div class="card">
+                            <div class="project-img">
+                                <img src="https://msmk.university/wp-content/uploads/2025/02/1_su8oo2RxXFfh4MK_zoi9QQ.png" alt="Proyecto 3">
+                            </div>
+                            <div class="card-body">
+                                <h3>Ejemplos de códigos y su ejecución</h3>
+                                <p>Ejemplos de códigos y su ejecución en JavaScript y PHP, mostrando su ejecución.</p>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <a href="https://cexord.github.io/Ejemplos-de-c-digos-y-su-ejecuci-n/" target="_blank" rel="noopener noreferrer" class="btn btn-turquesa btn-sm">Ver Detalles</a>
+                                    <div>
+                                        <span class="badge bg-turquesa">Bucle PHP</span>
+                                        <span class="badge bg-turquesa">Bucle en Js</span>
+                                        <span class="badge bg-turquesa">Redes</span>
+                                        <span class="badge bg-turquesa">Acumulativo en Js</span>
+                                        <span class="badge bg-turquesa">Calculadora Simple en PHP</span>
+                                        <span class="badge bg-turquesa">Calculadora Simple en Js</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-md-6 col-lg-4 mb-4">
+                        <div class="card">
+                            <div class="project-img">
+                                <img src="https://previews.123rf.com/images/miaoumiaoumiaou/miaoumiaoumiaou1804/miaoumiaoumiaou180400238/99430925-big-set-of-icons-about-education-and-college-subjects-modern-flat-style-colorful-illustrations.jpg" alt="Proyecto 3">
+                            </div>
+                            <div class="card-body">
+                                <h3>Materias Universitarias</h3>
+                                <p>Diversas Materias Universitarias</p>
+                                <div class="d-flex justify-content-between align-items-center mt-3">
+                                    <a href="https://cexord.github.io/Materias-Universitarias/" target="_blank" rel="noopener noreferrer" class="btn btn-turquesa btn-sm">Ver Detalles</a>
+                                    <div>
+                                        <span class="badge bg-turquesa">📡 REDES</span>
+                                        <span class="badge bg-turquesa">🎨 DISEÑO WEB</span>
+                                        <span class="badge bg-turquesa">💹 DESARROLLO ECONÓMICO</span>
+                                        <span class="badge bg-turquesa">📋 AUDITORIA DE SISTEMAS</span>
+                                        <span class="badge bg-turquesa">📚 TRABAJO ESPECIAL DE GRADO</span>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="cv" class="section">
+            <div class="container">
+                <div class="section-title">
+                    <h2>El <span class="text-turquesa">Curriculum</span></h2>
+                </div>
+                <div class="timeline">
+                    <div class="timeline-item">
+                        <h4>Desarrollador Senior</h4>
+                        <p class="text-turquesa">Tech Solutions Inc. | 2021 - Actualidad</p>
+                        <ul>
+                            <li>Liderazgo en el desarrollo de aplicaciones web a gran escala.</li>
+                            <li>Mentoreo de desarrolladores junior y colaboración en equipo.</li>
+                        </ul>
+                    </div>
+                    <div class="timeline-item">
+                        <h4>Desarrollador Full Stack</h4>
+                        <p class="text-turquesa">Innovate Labs | 2018 - 2021</p>
+                        <ul>
+                            <li>Desarrollo de APIs RESTful con Node.js y Express.</li>
+                            <li>Creación de interfaces de usuario interactivas con React.</li>
+                        </ul>
+                    </div>
+                    <div class="timeline-item">
+                        <h4>Desarrollador Junior</h4>
+                        <p class="text-turquesa">Web Creators | 2017 - 2018</p>
+                        <ul>
+                            <li>Participación en el desarrollo y mantenimiento de sitios web.</li>
+                            <li>Colaboración en proyectos con equipos multidisciplinarios.</li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="contacto" class="section bg-alt">
+            <div class="container">
+                <div class="section-title">
+                    <h2>Contáctame <span class="text-turquesa">Ahora</span></h2>
+                </div>
+                <div class="row justify-content-center">
+                    <div class="col-lg-8">
+                        <form class="contact-form">
+                            <input type="text" class="form-control" placeholder="Tu Nombre" required>
+                            <input type="email" class="form-control" placeholder="Tu Email" required>
+                            <textarea class="form-control" rows="5" placeholder="Tu Mensaje" required></textarea>
+                            <div class="text-center">
+                                <button type="submit" class="btn btn-turquesa">
+                                    <i class="fas fa-paper-plane me-2"></i>Enviar Mensaje
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+
+       
+        <footer>
+            <div class="container text-center">
+                <p>&copy; 2025 Cesar Dao | Desarrollador super Junior</p>
+                <div class="social-icons">
+                    <a href="https://linkedin.com" target="_blank"><i class="fab fa-linkedin fa-bounce" style="--fa-animation-duration: 2s;"></i></a>
+                    <a href="https://github.com/cexord?tab=overview&from=2025-08-01&to=2025-08-14" target="_blank"><i class="fab fa-github fa-bounce" style="--fa-animation-duration: 2s;"></i></a>
+                    <a href="https://www.youtube.com/watch?v=xR4qXUwsp9Q&ab_channel=tenhou96227744" target="_blank"><i class="fab fa-youtube fa-bounce" style="--fa-animation-duration: 2s;"></i></a>
+                    <a href="https://www.instagram.com/cexor_/" target="_blank"><i class="fab fa-instagram fa-bounce" style="--fa-animation-duration: 2s;"></i></a>
+                </div>
+            </div>
+        </footer>
+    </div>
+    
+    <div id="gundamSidebar" class="sidebar">
+        <i class="fas fa-times close-btn" onclick="toggleGundamSidebar()"></i>
+        <h2 class="text-turquesa mb-4">Mi Colección Gundam</h2>
+        <div id="gundamList"></div>
+    </div>
+
+    <div id="materiasSidebar" class="sidebar">
+        <i class="fas fa-times close-btn" onclick="toggleMateriasSidebar()"></i>
+        <h2 class="text-turquesa mb-4">Mis Materias Universitarias</h2>
+        <div id="materiasList"></div>
+    </div>
+
+    <button id="theme-toggle" class="theme-toggle">
+        <i class="fas fa-sun"></i>
+    </button>
+    
+    
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="script.js"></script>
+</body>
+</html>
