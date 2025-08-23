@@ -38,10 +38,7 @@ body {
   overflow-x: hidden;
 }
 
-h1,
-h2,
-h3,
-h4 {
+h1,h2,h3,h4 {
   color: var(--turquesa);
   font-family: 'Orbitron', sans-serif;
   font-weight: 700;
@@ -119,7 +116,7 @@ col-lg-8 {
 }
 
 .light-mode .navbar{
-  background-color: rgba(44, 44, 44, 0.95);
+  background-color: rgba(255, 255, 255, 0.95);
   box-shadow: var(--sombra-claro);
 }
 
@@ -245,7 +242,13 @@ col-lg-8 {
   box-shadow: var(--sombra);
   transition: all 0.4s ease;
   height: 100%;
+  
 }
+
+.badge{
+  color: #ffffff;
+}
+
 
 .light-mode .card {
   background: rgba(224, 224, 224, 0.7);
@@ -834,5 +837,4 @@ footer {
     margin-right: 0;
     margin-bottom: 20px;
   }
-
 }
