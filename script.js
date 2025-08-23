@@ -24,31 +24,31 @@ document.addEventListener('DOMContentLoaded', () => {
             nombre: "RX-78-2 Gundam",
             serie: "Mobile Suit Gundam",
             descripcion: "El icónico Mobile Suit piloteado por Amuro Ray.",
-            imagen: "RX-78-02_Gundam_29_Front.webp"
+            imagen: "https://static.wikia.nocookie.net/gundam/images/c/c7/RX-78-02_Gundam_%28CDI%29_Front.png/revision/latest/scale-to-width/360?cb=20220531210940"
         },
         {
             nombre: "ZGMF-X10A Freedom Gundam",
             serie: "Mobile Suit Gundam SEED",
             descripcion: "Mobile Suit de alta movilidad, piloteado por Kira Yamato.",
-            imagen: "Freedom_gundam_front_lineart_color.webp"
+            imagen: "https://static.wikia.nocookie.net/gundam/images/d/d1/Freedom_gundam_front_lineart_color.png/revision/latest?cb=20230708045100"
         },
         {
             nombre: "Wing Zero EW",
             serie: "Mobile Suit Gundam Wing EW",
             descripcion: "Mobile Suit transformable con una poderosa armadura. Piloteado por Heero Yuy.",
-            imagen: "Wing_gundam_zero_EW_front.webp"
+            imagen: "https://static.wikia.nocookie.net/gundam/images/2/2a/Wing_gundam_zero_EW_front.png/revision/latest?cb=20250614005028"
         },
         {
             nombre: "GNT-0000 00 Qan[T]",
             serie: "Mobile Suit Gundam 00 The Movie -A wakening of the Trailblazer",
             descripcion: "El GNT-0000 00 Qan[T] (también conocido como 00 Qan[T] (pronunciado Doble-Oh Quanta) es el sucesor del GN-0000+GNR-010 00 Raiser. Está pilotado por Setsuna F. Seiei.",
-            imagen: "00_Qan29_GN_Sword_IV.webp"
+            imagen: "https://static.wikia.nocookie.net/gundam/images/5/5b/00_Qan%28T%29_GN_Sword_IV.jpg/revision/latest/scale-to-width-down/1000?cb=20100610042811"
         },
         {
             nombre: "XVX-016RN Gundam Aerial Rebuild",
             serie: " Mobile Suit Gundam the Witch de Mercury",
             descripcion: "es un mobile suit introducido en Mobile Suit Gundam the Witch de Mercury. Es una actualización del XVX-016 Gundam Aerial pilotado inicialmente por Suletta Mercury y brevemente por Prospera Mercury",
-            imagen: "Gundam_Aerial_Rebuild_Front.webp"
+            imagen: "https://static.wikia.nocookie.net/gundam/images/f/f0/Gundam_Aerial_Rebuild_Front.png/revision/latest?cb=20230108103719"
         }
     ];
 
@@ -233,6 +233,26 @@ document.querySelectorAll('a[href^="#"]').forEach(anchor => {
                 behavior: 'smooth'
             });
         }
+         // Agregar keyframes para la animación de sacudida
+            const styleSheet = document.styleSheet || (function() {
+                const style = document.createElement('style');
+                document.head.appendChild(style);
+                return style.sheet;
+            })();
+            
+            const shakeKeyframes = `
+                @keyframes shake {
+                    0%, 100% { transform: translateX(0); }
+                    20%, 60% { transform: translateX(-8px); }
+                    40%, 80% { transform: translateX(8px); }
+                }
+            `;
+            
+            if (styleSheet.insertRule) {
+                styleSheet.insertRule(shakeKeyframes, styleSheet.cssRules.length);
+            }
+            
+            // Inicializar partículas flotantes
+            createParticles();
     });
-
 });
