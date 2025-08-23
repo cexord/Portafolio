@@ -245,10 +245,9 @@ col-lg-8 {
   
 }
 
-.badge{
-  color: #ffffff;
+body:not(.light-mode) .badge {
+  color: #fff !important;
 }
-
 
 .light-mode .card {
   background: rgba(224, 224, 224, 0.7);
@@ -838,3 +837,4 @@ footer {
     margin-bottom: 20px;
   }
 }
+
